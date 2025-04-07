@@ -16,8 +16,3 @@ def task_1(jumps: List[int]) -> bool:
         reachable = max(reachable, i + max_jump)
         if reachable > last_ell:
             return True
-
-
-if __name__ == "__main__":
-    jumps_arr = list(map(int, input().strip().split(' ')))
-    print(task_1(jumps_arr))
